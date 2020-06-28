@@ -21,12 +21,12 @@ def take_a_number(katz_deli, name)
 end
 
 
-def now_serving(line)
-  if line.length == 0
+def now_serving(katz_deli)
+  if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
   else
-  puts "Currently serving #{line[0]}."
-  line.shift
+  puts "Currently serving #{katz_deli[0]}."
+  katz_deli.shift
 end
 end
 
